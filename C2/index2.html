@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="style1.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+   <div class="outer-container">
+<div class="slideshow-container">
+    
+    <div class="title">
+   <h1>A Day of Thrifting</h1>
+    </div>
+    
+    <div class="project-topic">
+   <h1>Thrifting in San Luis Obispo</h1>
+    </div>
+     
+  
+<div class="mySlides fade">  
+  <div class="numbertext">1 / 10</div>
+  <img src="pics/1clincher.jpg" style="width:100%">
+  <div class="text"><strong>Saturday, October 12th, 2019, 2:00pm.</strong> Mia von Knorring, a fourth-year biomedical engineering major, spends a weekend afternoon searching for hidden gems at Goodwill Central Coast in San Luis Obispo. 
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="pics/2medium.jpg" style="width:100%">
+  <div class="text"><strong>Saturday, October 12th, 2019, 2:07pm.</strong> “I always like to start at the shirts and work my way around,” said Mia, “One of my secrets is to always look in the men’s section, it always has cool t-shirts and jackets.” Getting creative and seeing potential in pieces are important when thrifting clothes. </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img src="pics/3closeup.jpg" style="width:100%">
+  <div class="text"><strong>Saturday, October 12th, 2019.</strong>The central coast’s chapter of Goodwill began in Santa Cruz and spread to three different counties. The local Goodwill of San Luis Obispo is a staple in the community; it may be on the smaller side but it is always bustling with customers. </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img src="pics/4portait.jpg" style="width:100%">
+  <div class="text"><strong>Saturday, October 12th, 2019, 2:26pm.</strong> “I like to shop at Goodwill, Mission Thrift, and a few places in Morro Bay. It’s always fun to take part of the day to find some cool clothes or even other interesting things,”said Mia. Morro Bay boasts over 10 thrift stores and San Luis Obispo is home to around 12.
+    </div>
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 10</div>
+  <img src="pics/5random.jpg" style="width:100%">
+  <div class="text"><strong>Saturday, October 12th, 2019.</strong>Mia’s extra items hang outside the dressing room. Goodwill has a sign on the door requesting no more than five items at a time in the dressing rooms. This sign is in English and Spanish. </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <img src="pics/6sequence.jpg" style="width:100%">
+  <div class="text"><strong>Saturday, October 12th, 2019.</strong>Mia twists and turns in a bright yellow floral dress. “If I can’t see myself wearing something five times or more, I’ll put it back,” Mia said about her habit of impulse buying. Most items of clothing at Goodwill are under $15. </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  <img src="pics/7random.jpg" style="width:100%">
+  <div class="text"><strong>Saturday, October 12th, 2019.</strong> “Thrifting is one of the things that directly makes me feel like I’m lowering my impact on the environment. It bothers me that top brands for my demographic like H and Forever 21 don’t pay their workers a livable wage. So I consider it to be a hobby of mine that is low cost to me and the environment,” said Lucy Swift (not pictured), a fifth-year kinesiology major. </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  <img src="pics/8signature.jpg" style="width:100%">
+  <div class="text"><strong>Saturday, October 12th, 2019, 2:46pm.</strong>Mia contemplates a pair of shoes. One their website, Goodwill states they will only take certain donations: items such as baby toys, firearms, and mattresses are not permitted. </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9/ 10</div>
+  <img src="pics/9interaction.jpg" style="width:100%">
+  <div class="text"><strong>Saturday, October 12th, 2019, 2:51pm. </strong>“College students love to come here to buy outfits for themed parties. Once, I had some kids come in who had to buy an entire outfit for $15 and then pin the receipt on their shirt to prove it and get into the party,” said Annette (right), a Goodwill employee. 
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  <img src="pics/10overall.jpg" style="width:100%">
+  <div class="text"><strong>Saturday, October 12th, 2019, 2:54pm.</strong> Mia von Knorring, fourth year biomedical engineering major, walks back to her car after a successful thrifting spree. </div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	
+</div>
+    </div> 
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+    function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+</body>
+</html> 
